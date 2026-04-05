@@ -1,17 +1,12 @@
-import { useState } from 'react'
 import Button from './Components/Button/Button.tsx'
+import NavbarFunction from './Components/Navbar/Navbar.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
-
-      <div>Hello World</div>
-      <button onClick={() => setCount(count + 1)}>
-        Clicked {count} times
-      </button>
       <Button />
+      <NavbarFunction />
     </div>
   )
 }
