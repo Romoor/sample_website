@@ -5,7 +5,6 @@ function App() {
 
   return (
     <div>
-      <Button />
       <NavbarFunction />
     </div>
   )
