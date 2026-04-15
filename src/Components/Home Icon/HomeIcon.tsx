@@ -1,18 +1,19 @@
 import GlobalStyle from "./GlobalStyle";
-import GlowingIcon from "./GlowingIcon";
 import styled from "styled-components";
+import HeroGlowingIcon from "./HeroGlowingIcon";
 
 const HomeIconContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    size: 10vh;
 `;
 
 function HomeIcon() {
     return (
-        <HomeIconContainer>
+        <HomeIconContainer className="home_icon d-inline-flex">
             <GlobalStyle />
-            <GlowingIcon alt="Home Icon" />
+            <HeroGlowingIcon/>
         </HomeIconContainer>
     )
 }

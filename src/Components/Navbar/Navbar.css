@@ -9,17 +9,16 @@ body {
 
 .navbar {
     background-color: transparent;
-    padding: 0;
+    padding-top: 5rem;
+    padding-left: 1rem;
     margin: 0;     
-    margin-top: 1vh !important;   
-    padding-top: 0 !important;
-    z-index: 1000;
     gap: 0;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;  
     width:100%;
-    height: 60px;
+    height: 6rem;
+    flex-wrap: nowrap;
 }
 
 
@@ -27,14 +26,16 @@ body {
 
 
 .navbar-container {
-    display: flex;
-    justify-content: space-betweenxs;
+    display: inline-flex;
+    justify-content: space-between;
     width: 40%;
-    margin-top: 4%;
+    margin-top: 0%;
     margin-left: 50%;
-    flex-wrap: nowrap;
     width: 50%;
     padding-right: 5%;
+    align-items: center;
+        align-items: center;  
+
 }
 
 .nav-gradient {
@@ -51,9 +52,10 @@ body {
     align-items: center;
     border-radius: 0 !important;
     justify-content: flex-start;
-    margin-left: auto;
     outline: none !important;
     box-shadow: none !important;
+        align-items: center;  
+
 
 }
 
@@ -63,19 +65,37 @@ body {
     background-color: transparent;
     border: transparent;
     display: inline-flex; 
-    padding-left: 3rem;
     justify-content: flex-end;
     padding: 0 clamp(0.25rem, 1vw, 1rem);   
     font-size: clamp(0.8rem, 1.2vw, 2rem);
     white-space: nowrap;
+        align-items: center;  
+    margin-left: 0px;
+font-family: "Audiowide", sans-serif;
 }
-.button:hover {
+.navbar-button:hover {
     background-color: transparent;
-    border: transparent;
     color: #fff;
-    text-decoration: underline;
+    margin-left: 0;
+
 }
 
+.btn-underline {
+  position: relative;
+}
 
+.btn-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 5px; /* Adjust distance from text */
+  left: 10%;   /* Adjust for padding */
+  width: 0;
+  height: 2px;
+  background-color: white; /* Underline color */
+  transition: width 0.3s ease;
+}
 
+.btn-underline:hover::after {
+  width: 80%; /* Width on hover */
+}
 
